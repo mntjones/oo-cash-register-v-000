@@ -40,5 +40,6 @@ class CashRegister
       @@items.pop
       quantity -= 1
     end
+    @total
   end
 end
