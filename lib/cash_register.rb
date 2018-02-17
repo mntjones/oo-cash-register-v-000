@@ -38,7 +38,7 @@ class CashRegister
     @total -= @last_item[1] * @last_item[2]
     while @last_item[2] > 0
       @@items.pop
-      quantity -= 1
+      @last_item[2] -= 1
     end
     @total
   end
